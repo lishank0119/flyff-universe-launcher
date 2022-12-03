@@ -22,7 +22,3 @@
 #### Single Window(單一視窗)
 ![singleWindow.jpg](screenShots/singleWindow.jpg)
 
-## Video
-[multi window](video/multiWindow.mp4)
-
-[single window](video/singleWindow.mp4)
