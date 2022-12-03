@@ -21,4 +21,3 @@
 ![multiWindow-2.jpg](screenShots%2FmultiWindow-2.jpg)
 #### Single Window(單一視窗)
 ![singleWindow.jpg](screenShots/singleWindow.jpg)
-
