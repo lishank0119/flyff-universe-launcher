@@ -1,5 +1,6 @@
 # flyff-universe-launch
 
+## flyff universe win10 啟動器
 1. 單純打開遊戲，無外掛功能
 2. 有單視窗，同一個視窗多開
 3. 本應用程式基於Electron開發，跟Discord同一個Core
