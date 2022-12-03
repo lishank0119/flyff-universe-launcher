@@ -9,7 +9,7 @@
 5. 應用程式為學術研究
 6. 除非重大BUG才會修復 
 7. 應用程式已用卡巴斯基掃毒，無病毒
-8. 覺得好用可以斗內
+8. 覺得好用可以斗內↓
 
 <a href='https://ko-fi.com/Z8Z7GSFJE' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
