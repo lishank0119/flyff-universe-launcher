@@ -6,3 +6,5 @@
 5. 除非重大BUG才會修復
 6. 應用程式已用卡巴斯基掃毒，無病毒
 7. 覺得好用可以斗內
+
+[Download](https://github.com/yungming/flyff-universe-launch/releases/download/1.0.3/flyff.universe.launch.rar)
