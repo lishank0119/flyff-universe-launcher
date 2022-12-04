@@ -17,7 +17,7 @@
 
 ## ScreenShots
 #### Main Window(主頁面)
-![main window](screenShots/main.jpg)
+![main window](screenShots/main.jpg?v=1.0)
 #### Multi Window(同一個視窗多開)
 ![multiWindows.jpg](screenShots/multiWindows.jpg)
 ![multiWindow-2.jpg](screenShots%2FmultiWindow-2.jpg)
