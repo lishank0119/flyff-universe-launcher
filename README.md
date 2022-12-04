@@ -1,4 +1,4 @@
-# flyff universe launch
+# flyff universe launcher
  flyff universe win10 啟動器
 
 [Download](https://github.com/yungming/flyff-universe-launch/releases/download/1.0.3/flyff.universe.launch.rar)
