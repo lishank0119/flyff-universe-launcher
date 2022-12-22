@@ -1,0 +1,22 @@
+{
+  "name": "flyff-universe-launcher",
+  "version": "1.0.6",
+  "main": "dist/main.js",
+  "appId": "shank.flyff.universe.launcher",
+  "description": "flyff universe launcher",
+  "author": "Shank",
+  "scripts": {
+    "watch": "tsc -w",
+    "lint": "eslint -c .eslintrc --ext .ts ./src",
+    "start": "tsc && electron ./dist/main.js",
+    "build": "tsc && node build.js"
+  },
+  "devDependencies": {
+    "electron": "^22.0.0",
+    "electron-builder": "^23.6.0",
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "electron-store": "^8.1.0"
+  }
+}

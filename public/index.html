@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flyff universe Launcher</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-night.min.css">
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+
+</head>
+<body>
+
+<div class="container mt-3">
+    <div class="card border-secondary">
+        <div class="card-body">
+            <div class="input-group">
+                <input type="text"
+                       id="input-game-window-name"
+                       class="form-control border-primary"
+                       placeholder="設定檔名稱"
+                       aria-label="設定檔名稱"
+                       aria-describedby="button-add-game-button">
+                <button onclick="onAddGameProfile()"
+                        class="btn btn-primary"
+                        type="button">
+                    新增
+                </button>
+            </div>
+
+            <button onclick="onOpenMultiWindowSetting()"
+                    class="btn btn-info mt-2"
+                    type="button">
+                多視窗設定
+            </button>
+
+            <div class="table-responsive">
+                <table class="table table-striped table-hover mt-2">
+                    <thead>
+                    <tr>
+                        <th scope="col">名稱</th>
+                        <th scope="col"></th>
+                    </tr>
+                    </thead>
+                    <tbody id="game-profile-list">
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="window-single-setting" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">設定</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-window-setting" type="button" role="tab"
+                                    aria-controls="nav-home" aria-selected="true">視窗
+                            </button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active m-1 mt-2" id="nav-window-setting" role="tabpanel"
+                             aria-labelledby="nav-window-setting">
+
+                            <select class="form-select mt-2" id="resolution-select" aria-label="請選擇解析度">
+                                <option value="-1" selected>請選擇解析度</option>
+                                <option value="0">1280x720</option>
+                                <option value="1">1440x900</option>
+                                <option value="2">1660x900</option>
+                                <option value="3">1920x1080</option>
+                            </select>
+                            <div class="form-check mt-2">
+                                <input class="form-check-input" type="checkbox" value="" id="fullscreen-check">
+                                <label class="form-check-label" for="fullscreen-check">
+                                    全螢幕
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="window-setting" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">設定</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <input type="text"
+                               id="input-change-game-window-name"
+                               class="form-control border-primary"
+                               placeholder="遊戲視窗名稱"
+                               aria-label="遊戲視窗名稱"
+                               aria-describedby="button-add-game-button">
+                        <button onclick="onChangeGameProfileName()"
+                                class="btn btn-primary"
+                                type="button">
+                            改名
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="multi-window-setting" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">多視窗設定</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row">
+                        2個視窗
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="multi-2-windows-size" id="2-50-100" value="1">
+                            <label class="form-check-label" for="2-50-100">高50% 寬100%</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="multi-2-windows-size" id="2-100-50" value="2">
+                            <label class="form-check-label" for="2-100-50">高100% 寬50%</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="multi-2-windows-size" id="2-100-100" value="3">
+                            <label class="form-check-label" for="2-100-100">高100% 寬100%</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        3個視窗以上
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="multi-more-windows-size" id="50-100" value="1">
+                            <label class="form-check-label" for="50-100">高50% 寬100%</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="multi-more-windows-size" id="100-50" value="2">
+                            <label class="form-check-label" for="100-50">高100% 寬50%</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="multi-more-windows-size" id="100-100" value="3">
+                            <label class="form-check-label" for="100-100">高100% 寬100%</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="multi-more-windows-size" id="50-50" value="4">
+                            <label class="form-check-label" for="50-50">高50% 寬50%</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                    <button type="button" onclick="onSaveMultiWindowSetting()" class="btn btn-primary">確定</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+<style>
+    table {
+        vertical-align: middle !important;
+    }
+</style>
