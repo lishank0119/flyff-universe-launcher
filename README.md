@@ -1,5 +1,5 @@
 # flyff universe launcher
- flyff universe win10 啟動器
+ flyff universe 啟動器 (windows)
 
 [Download](https://github.com/yungming/flyff-universe-launcher/releases/download/1.0.5/flyff.universe.launcher.rar)
 
@@ -9,8 +9,8 @@
 - F11 全螢幕
 - 本應用程式基於Electron開發，跟Discord同一個Core
 - 應用程式為學術研究
-- 除非重大BUG才會修復 
 - 應用程式已用卡巴斯基掃毒，無病毒
+- 多視窗設定自由擺放
 - 覺得好用可以斗內↓
 
 <a href='https://ko-fi.com/Z8Z7GSFJE' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
@@ -19,7 +19,8 @@
 #### Main Window(主頁面)
 ![main window](screenShots/main.jpg?v=1.0)
 #### Multi Window(同一個視窗多開)
+![multiWindowSetting.jpg](screenShots/multiWindowSetting.jpg)
 ![multiWindows.jpg](screenShots/multiWindows.jpg)
-![multiWindow-2.jpg](screenShots%2FmultiWindow-2.jpg)
+![multiWindow-2.jpg](screenShots/multiWindow-2.jpg)
 #### Single Window(單一視窗)
 ![singleWindow.jpg](screenShots/singleWindow.jpg)

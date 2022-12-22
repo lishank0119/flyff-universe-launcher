@@ -1,10 +1,16 @@
 {
   "name": "flyff-universe-launcher",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "dist/main.js",
   "appId": "shank.flyff.universe.launcher",
   "description": "flyff universe launcher",
+  "repository": "https://github.com/yungming/flyff-universe-launcher",
   "author": "Shank",
+  "keywords": [
+    "flyff",
+    "flyff universe",
+    "launcher"
+  ],
   "scripts": {
     "watch": "tsc -w",
     "lint": "eslint -c .eslintrc --ext .ts ./src",
