@@ -1,7 +1,7 @@
 # flyff universe launcher
  flyff universe 啟動器 (windows)
 
-[Download](https://github.com/yungming/flyff-universe-launcher/releases/download/1.0.5/flyff.universe.launcher.rar)
+[Download](https://github.com/yungming/flyff-universe-launcher/releases)
 
 - 單純打開遊戲，無外掛功能
 - 每個設定檔獨立Cache&Session
